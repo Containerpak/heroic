@@ -1,26 +1,25 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Heroic Games Launcher",
   "description": "Install and play games from Epic, GOG and Amazon.",
   "version": "2.22.1",
-  "image": "ghcr.io/containerpak/heroic:main",
-  "binaries": ["/opt/Heroic/heroic"],
-  "desktop_entries": ["/usr/share/applications/heroic.desktop"],
+  "image": "ghcr.io/containerpak/heroic@sha256:793de78f55d4ff05d7c48d58cbf9024e7051843637bad7fd4ce3db65f1370831",
+  "binaries": [
+    "/opt/Heroic/heroic"
+  ],
+  "desktop_entries": [
+    "/usr/share/applications/heroic.desktop"
+  ],
   "dependencies": [],
   "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": true,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -33,7 +32,10 @@
     "notification": true,
     "openURI": true,
     "filesystem": [
-      {"path": "home", "access": "read-write"}
+      {
+        "path": "home",
+        "access": "read-write"
+      }
     ],
     "env": [],
     "network": true,
@@ -42,7 +44,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }
