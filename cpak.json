@@ -3,7 +3,7 @@
   "manifest_version": "3.0",
   "name": "Heroic Games Launcher",
   "description": "Install and play games from Epic, GOG and Amazon.",
-  "version": "2.22.1",
+  "version": "2.22.2",
   "image": "ghcr.io/containerpak/heroic@sha256:c4ef6c4cfccd85f1142f59633fc2d0df56a876d4e64a6fd42a838f70f73bc407",
   "binaries": [
     "/opt/Heroic/heroic"
