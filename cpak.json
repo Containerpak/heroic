@@ -4,7 +4,7 @@
   "name": "Heroic Games Launcher",
   "description": "Install and play games from Epic, GOG and Amazon.",
   "version": "2.22.2",
-  "image": "ghcr.io/containerpak/heroic@sha256:4dce0cd5de08c4e3bdef5d5ea77f9d6351f19f1f808cd962b2768170d8128e88",
+  "image": "ghcr.io/containerpak/heroic@sha256:2daf7a55863a8e7f1b4991837a05e505cd19e168cdc3936c14527d0c38d65ce5",
   "binaries": [
     "/opt/Heroic/heroic"
   ],
